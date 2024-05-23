@@ -9,7 +9,7 @@ const approutes=express.Router();
 approutes.post('/signup',registeruser);
 approutes.post('/addtodo',addtodo);
 approutes.get('/gettask/:user',getusers);
-approutes.put('/updatetask',updateTask);
+approutes.put('/updatetask/:_id',updateTask);
 approutes.delete('/deletetask',deletetask);
 
 

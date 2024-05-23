@@ -23,6 +23,7 @@ const registeruser=async(req,res)=>{
             message:"register successfully",
             data:newuser
         })
+    
 
     }
 
