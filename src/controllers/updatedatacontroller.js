@@ -4,10 +4,7 @@ const updateTask=async(req,res)=>{
     
 
     try{
-        // const id=req.query;
-        console.log(req.params);
-        const title=req.body;
-        console.log(title);
+
         const updatedtask=await Task.findByIdAndUpdate(req.params,{
             $set:req.body
         });
