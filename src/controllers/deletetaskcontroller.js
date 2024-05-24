@@ -2,7 +2,7 @@ const Task = require("../models/taskmodel");
 
 const deletetask=async(req,res)=>{
     try{
-        const {id}=req.query;
+        const id=req.query;
     const deletedtask=await Task.findByIdAndDelete(id);
     if(!deletedtask){
         res.status(400).json({
